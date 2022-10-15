@@ -1,16 +1,30 @@
-from math import pi
 def convert():
     print("Choose one:")
-    print("1. task")
-    print("2. fuck")
+    print("1. calc")
+    print("2. pornhub.com")
     number = input()
-    if number not in ("1" , "2"):
-        print("ты даун")
+    if number in ("1"):
+        print("enter digits: ")
+        a = int(input())
+        b = int(input())
+        x = input("pohui:")
+        if x == "+":
+            print(a+b)
+        elif x == "-":
+            print(a-b)
+        elif x == "*":
+            print(a*b)
+        elif x == "/":
+            print(a/b)
+        else:
+            if a:
+                print(a/b)
+            else:
+                print("ПОШЕЛ ТЫ НАХУЙ!")
     else:
-        if number == "1":
-            print((11 * (2 ** 2)) - ((13 / 4) + 7))
-        elif number == "2":
-            print((3 * 36 / (4 * pi)) ** (1/3))
+        print("пошел ты нахуй!")
+
+
 convert()
 while True:
     flag = input("One more time? [y/n]: ")
